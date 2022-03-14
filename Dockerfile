@@ -1,5 +1,5 @@
 FROM python:3.6
-RUN pip install Flask
+RUN pip install --no-cache-dir --requirement restful_python_2_01_01/Flask01/requirements.txt 
 RUN useradd -ms /bin/bash admin
 USER admin
 WORKDIR /app
